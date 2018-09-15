@@ -1,0 +1,128 @@
+#home-container {
+  background-color: #252830;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+#intro-section{
+  background-image: url("../assets/snowboarding.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+    background-color: #111111;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+#intro-container {
+  border: 1px solid #FFFFFF;
+  border-color: rgba(255,255,255,0.35);
+  padding: 30px;
+}
+
+#intro-name {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.35);
+}
+
+#intro-title{
+  color: #efefef;
+  text-align: center;
+  font-size: 30px;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+#profile {
+  background-color: #434242;
+}
+
+#main-marquee {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.point-containers{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.division {
+  padding: 10px;
+}
+
+.points {
+  text-align: center;
+  font-size: 35px;
+  font-family: Catamaran,Helvetica,Arial,sans-serif;
+  border: 1px solid #22a39f;
+  border-bottom-color: #22a39f;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#profile-division {
+  background-color: #f3efe0;
+}
+
+#exp-division {
+  background-color: #efefef;
+  padding: 30px;
+}
+
+#skills-division {
+  background-color: #f3efe0;
+}
+
+.row-padding {
+  padding: 20px;
+}
+
+#contact-division {
+  background-color: #efefef;
+  text-align: center;
+}
+
+.h2, h2 {
+  color: #22a39f;
+}
+
+.h3, h3 {
+  color: #22a39f;
+}
+
+.h4, h4 {
+  color: #22a39f;
+}
+
+.h5, h5 {
+  color: #22a39f;
+  margin-bottom: 0;
+}
+
+.p, p {
+  color: #22a39f;
+}
+
+.li, li {
+  color: #22a39f;
+}
+
+.center {
+  text-align: center;
+}
+
+.top-spacing {
+  padding-top: 10px;
+}

@@ -1,0 +1,52 @@
+runtime: python27
+threadsafe: yes
+api_version: 1
+
+handlers:
+- url: /dev.*
+  script: server.dev.app
+
+- url: /(.*\.woff)
+  mime_type: application/x-font-woff
+  static_files: dist/\1
+  upload: dist/(.*\.woff)
+
+- url: /(.*\.woff2)
+  mime_type: font/woff2
+  static_files: dist/\1
+  upload: dist/(.*\.woff2)
+
+- url: /favicon.ico
+  static_files: dist/favicon.ico
+  upload: dist/favicon.ico
+
+- url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
+  static_files: dist/\1
+  upload: dist/(.*)(|\.map)
+
+- url: /dist
+  static_dir: dist
+
+- url: /(.*)
+  script: server.main.app
+
+libraries:
+- name: webapp2
+  version: latest
+
+skip_files:
+- ^node_modules$
+- ^.*.pyc
+- ^e2e$
+- ^src$
+- ^angular-cli.json
+- \.editorconfig
+- \.gitignore
+- ^app\.yaml
+- ^karma\.config\.js
+- ^package\.json
+- ^protractor\.conf\.js
+- ^proxy.conf.json
+- ^README\..*
+- ^tsconfig.json
+- ^tslint\.json
